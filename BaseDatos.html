@@ -1,9 +1,7 @@
 <!DOCTYPE html>
 <!-- saved from url=(0054)http://localhost/PRACTICA-4/Ejercicio-6/Ejercicio6.php -->
-<html lang="es">
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
+<html lang="es"><link type="text/css" rel="stylesheet" id="dark-mode-general-link"><link type="text/css" rel="stylesheet" id="dark-mode-custom-link"><style lang="en" type="text/css" id="dark-mode-custom-style"></style><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
     <title>Modificador base de datos</title>
     <link rel="stylesheet" href="./BaseDatos_files/Ejercicio6.css">
 </head>
@@ -11,85 +9,121 @@
 <body>
     <h1>Modificador base de datos</h1>
     <p>Página que permite operar con una base de datos</p>
-    <form action="http://localhost/PRACTICA-4/Ejercicio-6/Ejercicio6.php#" method="post" name="botones">
+        <form action="http://localhost/PRACTICA-4/Ejercicio-6/Ejercicio6.php#" method="post" name="botones">
 
         <h2>CREAR BASE DATOS</h2>
         <p>Pulsando este botón crearás la base de datos</p>
+        <label for="crearBase">Crear base de datos</label>
         <input type="submit" name="crearBase" id="crearBase" value="Crear base de datos">
 
         <h2>CREAR TABLA</h2>
         <p>Pulsando este botón crearás la tabla de pruebas de usabilidad con sus correspondientes columnas</p>
+        <label for="crearTabla">Crear tablas</label>
         <input type="submit" name="crearTabla" id="crearTabla" value="Crear tabla pruebas de usabilidad">
 
         <h2>INSERTAR DATOS</h2>
         <p>Pulsando este botón añadirás la nueva prueba de usabilidad con los datos insertados en los campos</p>
+
         <p>Dni de la persona que realiza la prueba: </p>
-        <input type="text" name="dni">
+        <label for="dniIns">Dni a insertar</label>
+        <input type="text" name="dni" id="dniIns">
+
         <p>Nombre de la persona que realiza la prueba:</p>
-        <input type="text" name="nombre">
+        <label for="nombreIns">Nombre a insertar</label>
+        <input type="text" name="nombre" id="nombreIns">
+
         <p>Apellidos de la persona que realiza la prueba</p>
-        <input type="text" name="apellidos">
+        <label for="apellidosIns">Apellidos a insertar</label>
+        <input type="text" name="apellidos" id="apellidosIns">
+
         <p>Email de la persona que realiza la prueba:</p>
-        <input type="text" name="email">
+        <label for="emailIns">Email a insertar</label>
+        <input type="text" name="email" id="emailIns">
+
         <p>Teléfono de la persona que realiza la prueba:</p>
-        <input type="text" name="telefono">
+        <label for="telefonoIns">Teléfono a insertar</label>
+        <input type="text" name="telefono" id="telefonoIns">
+
         <p>Edad de la persona que realiza la prueba</p>
-        <input type="text" name="edad">
+        <label for="edadIns">Edad a insertar</label>
+        <input type="text" name="edad" id="edadIns">
+
         <p>Sexo de la persona que realiza la prueba:</p>
-        <input type="text" name="sexo">
+        <label for="sexoIns">Sexo a insertar</label>
+        <input type="text" name="sexo" id="sexoIns">
+
         <p>Nivel informático de la persona que realiza la prueba: </p>
-        <input type="text" name="nivel">
+        <label for="nivelIns">Nivel a insertar</label>
+        <input type="text" name="nivel" id="nivelIns">
+
         <p>Tiempo que ha tardado en realizarse la prueba:</p>
-        <input type="text" name="tiempo">
+        <label for="tiempoIns">Tiempo a insertar</label>
+        <input type="text" name="tiempo" id="tiempoIns">
+
         <p>Se ha realizado correctamente la prueba:</p>
-        <input type="text" name="correcto">
+        <label for="correctoIns">Correcto a insertar</label>
+        <input type="text" name="correcto" id="correctoIns">
+
         <p>Comentarios acerca de la prueba:</p>
-        <input type="text" name="comentarios">
+        <label for="comentariosIns">Comentarios a insertar</label>
+        <input type="text" name="comentarios" id="comentariosIns">
+
         <p>Propuestas acerca de la prueba:</p>
-        <input type="text" name="propuestas">
+        <label for="propuestasIns">Propuestas a insertar</label>
+        <input type="text" name="propuestas" id="propuestasIns">
+
         <p>Valoración de la prueba:</p>
-        <input type="text" name="valoracion">
+        <label for="valoracionIns">Valoración a insertar</label>
+        <input type="text" name="valoracion" id="valoracionIns">
+
         <p>Información adicional: Sexo se tendrá que poner hombre o mujer. El nivel podrá ser de 1 a 10.</p>
+        <label for="insertarDatos">Insertar datos</label>
         <input type="submit" name="insertarDatos" id="insertarDatos" value="Insertar datos de la prueba de usabilidad">
 
         <h2>BUSCAR DATOS</h2>
         <p>Pulsando este botón se mostrarán todas las pruebas de usabilidad registradas en la tabla</p>
+        <label for="buscarDatos">Buscar datos</label>
         <input type="submit" name="buscarDatos" id="buscarDatos" value="Obtener listado de pruebas">
 
         <h2>MODIFICAR DATOS</h2>
-        <p>Pulsando este botón se podrá modificar el nivel informático y la valoración de la prueba asociada a un DNI
-        </p>
+        <p>Pulsando este botón se podrá modificar el nivel informático y la valoración de la prueba asociada a un DNI</p>
         <p>Dni de la persona de la cual se quieren modificar los datos</p>
-        <input type="text" name="dniAModificar">
+        <label for="dniAModificar">Dni a modificar</label>
+        <input type="text" name="dniAModificar" id="dniAModificar">
         <p>Nuevo nivel informático del usuario de la prueba:</p>
-        <input type="text" name="nivelAModificar">
+        <label for="nivelAModificar">Nivel a modificar</label>
+        <input type="text" name="nivelAModificar" id="nivelAModificar">
         <p>Nueva valoración de la prueba:</p>
-        <input type="text" name="valoracionAModificar">
+        <label for="valoracionAModificar">Valoración a modificar</label>
+        <input type="text" name="valoracionAModificar" id="valoracionAModificar">
         <p>Información adicional: El nivel podrá ser de 1 a 10</p>
+        <label for="modificarDatos">Modificar datos</label>
         <input type="submit" name="modificarDatos" id="modificarDatos" value="Modificar datos de la tabla de pruebas">
 
         <h2>BORRAR DATOS</h2>
         <p>Pulsando este botón se podrá borrar la prueba asociada a un DNI</p>
         <p>Dni de la persona que ha realizado las pruebas que se quieren borrar:</p>
-        <input type="text" name="dniABorrar">
+        <label for="dniABorrar">Dni a borrar</label>
+        <input type="text" name="dniABorrar" id="dniABorrar">
         <p>Información adicional: Se borrará la prueba asociada a ese dni específico</p>
-        <input type="submit" name="eliminarDatos" id="eliminarDatos"
-            value="Borrar pruebas realizadas por cierta persona">
+        <label for="eliminarDatos">Eliminar datos</label>
+        <input type="submit" name="eliminarDatos" id="eliminarDatos" value="Borrar pruebas realizadas por cierta persona">
 
         <h2>GENERAR INFORME</h2>
         <p>Se generará un informe con información detallada</p>
+        <label for="generarInforme">Generar informe</label>
         <input type="submit" name="generarInforme" id="generarInforme" value="Generar informe">
 
         <h2>EXPORTAR DATOS</h2>
         <p>Se exportarán los datos de la tabla a un archivo csv</p>
+        <label for="exportarDatos">Exportar datos</label>
         <input type="submit" name="exportarDatos" id="exportarDatos" value="Exportar datos a csv">
 
         <h2>CARGAR DATOS</h2>
         <p>Se cargarán los datos desde un archivo en local</p>
+        <label for="cargarDatos">Cargar datos</label>
         <input type="submit" name="cargarDatos" id="cargarDatos" value="Cargar datos desde un archivo en una tabla">
     </form>
+    
 
-
-</body>
-
-</html>
+</body></html>
