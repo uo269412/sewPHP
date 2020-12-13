@@ -17,101 +17,134 @@
 
         <h2>CREAR BASE DATOS</h2>
         <p>Pulsando este botón crearás la base de datos</p>
+        <label for="crearBase">Crear base de datos</label>
         <input type="submit" name="crearBase" id="crearBase" value="Crear base de datos">
 
         <h2>CREAR TABLAS</h2>
         <p>Pulsando este botón se crearán las tablas en la base de datos que almacenarán las tiendas y las tartas que
             ofrecen</p>
+        <label for="crearTabla">Crear tablas</label>
         <input type="submit" name="crearTabla" id="crearTabla" value="Crear tablas">
 
         <h2>CREAR UNA NUEVA TIENDA</h2>
         <p>Pulsando este botón se creará una nueva tienda de tartas</p>
         <p>Código de la tienda: </p>
-        <input type="text" name="codigoD">
+        <label for="codigoD">Código a insertar</label>
+        <input type="text" name="codigoD" id="codigoD">
         <p>Nombre de la tienda:</p>
-        <input type="text" name="nombreD">
+        <label for="nombreD">Nombre a insertar</label>
+        <input type="text" name="nombreD" id="nombreD">
         <p>Ciudad donde se sitúa la tienda:</p>
-        <input type="text" name="ciudadD">
+        <label for="ciudadD">Ciudad a insertar</label>
+        <input type="text" name="ciudadD" id="ciudadD">
         <p>Calle donde está la tienda:</p>
-        <input type="text" name="calleD">
+        <label for="calleD">Calle a insertar</label>
+        <input type="text" name="calleD" id="calleD">
         <p>Teléfono de contacto:</p>
-        <input type="text" name="telefonoD">
+        <label for="telefonoD">Teléfono a insertar</label>
+        <input type="text" name="telefonoD" id="telefonoD">
         <p>Número de empleados de la tienda:</p>
-        <input type="text" name="empleadosD">
+        <label for="empleadosD">Empleados a insertar</label>
+        <input type="text" name="empleadosD" id="empleadosD">
         <p>Tamaño de la tienda:</p>
-        <input type="text" name="tamañoD">
+        <label for="tamañoD">Tamaño a insertar</label>
+        <input type="text" name="tamañoD" id="tamañoD">
         <p>Información adicional: El tamaño de la tienda se expresará en metros cuadrados</p>
+        <label for="insertarDatosTienda">Insertar datos de la tienda</label>
         <input type="submit" name="insertarDatosTienda" id="insertarDatosTienda" value="Crear nueva tienda">
 
         <h2>CREAR UNA NUEVA TARTA</h2>
         <p>Pulsando este botón se creará una nueva tarta</p>
         <p>Nombre de la tarta: </p>
-        <input type="text" name="nombreT">
+        <label for="nombreT">Nombre a insertar</label>
+        <input type="text" name="nombreT" id="nombreT">
         <p>Sabor de la tarta: </p>
-        <input type="text" name="saborT">
+        <label for="saborT">Sabor a insertar</label>
+        <input type="text" name="saborT" id="saborT">
         <p>Ingrediente principal:</p>
-        <input type="text" name="principalT">
+        <label for="principalT">Ingrediente principal a insertar</label>
+        <input type="text" name="principalT" id="principalT">
         <p>Receta:</p>
-        <input type="text" name="recetaT">
+        <label for="recetaT">Receta a insertar</label>
+        <input type="text" name="recetaT" id="recetaT">
         <p>¿Apta para celíacos?</p>
-        <input type="text" name="celiacoT">
+        <label for="celiacoT">Apto para celíacos a insertar</label>
+        <input type="text" name="celiacoT" id="celiacoT">
         <p>Información adicional: Para el campo apto para celíacos será suficiente escribir "si" en caso positivo y "no"
             en caso contrario</p>
+        <label for="insertarDatosTarta">Insertar datos de la tarta</label>
         <input type="submit" name="insertarDatosTarta" id="insertarDatosTarta" value="Crear nueva tarta">
 
         <h2>MOSTRAR LISTADO DE TIENDAS</h2>
         <p>Pulsando este botón se mostrará la información de todas las tiendas que hay en la base de datos</p>
+        <label for="buscarDatosTienda">Buscar datos de las tiendas</label>
         <input type="submit" name="buscarDatosTienda" id="buscarDatosTienda" value="Obtener información de las tiendas">
 
         <h2>MOSTRAR LISTADO DE TARTAS</h2>
         <p>Pulsando este botón se mostrará la información de todas las tartas que hay en la base de datos</p>
+        <label for="buscarDatosTarta">Buscar datos de las tartas</label>
         <input type="submit" name="buscarDatosTarta" id="buscarDatosTarta" value="Obtener información de las tartas">
 
         <h2>INFORME DE LAS TARTAS QUE VENDE CADA TIENDA</h2>
         <p>Pulsando este botón se mostrará información de las tiendas y de las tartas que vende cada una de estas</p>
+        <label for="generarInforme">Generar informe de los datos</label>
         <input type="submit" name="generarInforme" id="generarInforme" value="Generar informe">
 
         <h2>MODIFICAR RECETA DE UNA TARTA</h2>
         <p>Pulsando este botón se podrá modificar la receta de una de las tartas</p>
         <p>Nombre de la tarta la cual queremos cambiar su receta:</p>
-        <input type="text" name="nombreTartaModificar">
+        <label for="nombreTartaModificar">Nombre tarta a modificar</label>
+        <input type="text" name="nombreTartaModificar" id="nombreTartaModificar">
         <p>Nueva receta de la tarta:</p>
-        <input type="text" name="recetaTartaModificar">
+        <label for="recetaTartaModificar">Receta a modificar</label>
+        <input type="text" name="recetaTartaModificar" id="recetaTartaModificar">
         <p>Información adicional: Se insertará el nombre de la tarta y se escribirá la nueva receta</p>
+        <label for="modificarDatos">Modificar datos</label>
         <input type="submit" name="modificarDatos" id="modificarDatos" value="Modificar receta">
 
         <h2>VENDER TARTA EN UNA TIENDA</h2>
         <p>Pulsando este botón se podrá hacer que una tienda empiece a vender una tarta ya contenida en la base de datos
         </p>
         <p>Código de la tienda que ofertará la tarta:</p>
-        <input type="text" name="codigoDVender">
+        <label for="codigoDVender">Código de la tienda donde se venderá</label>
+        <input type="text" name="codigoDVender" id="codigoDVender">
         <p>Nombre de la tarta que se venderá:</p>
-        <input type="text" name="nombreTVender">
+        <label for="nombreTVender">Nombre de la tarta que se va a vender</label>
+        <input type="text" name="nombreTVender" id="nombreTVender">
         <p>Precio al que se venderá:</p>
-        <input type="text" name="precioVender">
+        <label for="precioVender">Precio a la que se va a vender</label>
+        <input type="text" name="precioVender" id="precioVender">
         <p>Información adicional: Se creará una nueva entrada en la tabla SeVende con estos datos</p>
+        <label for="asignarDatos">Asignar datos</label>
         <input type="submit" name="asignarDatos" id="asignarDatos" value="Comenzar a vender">
 
         <h2>QUITAR TARTA DE UNA TIENDA</h2>
         <p>Pulsando este botón se podrá hacer que una tienda deje de vender una tarta, ya sea por falta de ingredientes
         </p>
         <p>Código de la tienda en la que se dejará de ofertar dicha tarta:</p>
-        <input type="text" name="codigoDQuitar">
-        <p>Nombre de la tarta que se dejará de ofertar:</p>
-        <input type="text" name="nombreTQuitar">
-        <p>Información adicional: Se borrará la entrada en la tabla SeVende con estos datos</p>
-        <input type="submit" name="eliminarDatos" id="eliminarDatos" value="Quitar tarta">
+        <label for="codigoDQuitar">Código de la tienda donde se quitará la tarta/label&gt;
+            <input type="text" name="codigoDQuitar" id="codigoDQuitar">
+            <p>Nombre de la tarta que se dejará de ofertar:</p>
+            <label for="nombreTQuitar">Nombre de la tarta que se dejará de vender</label>
+            <input type="text" name="nombreTQuitar" id="nombreTQuitar">
+            <p>Información adicional: Se borrará la entrada en la tabla SeVende con estos datos</p>
+            <label for="eliminarDatos">Eliminar datos</label>
+            <input type="submit" name="eliminarDatos" id="eliminarDatos" value="Quitar tarta">
 
-        <h2>EXPORTAR DATOS DE LAS TARTAS</h2>
-        <p>Se exportarán los datos de las tartas a un archivo csv</p>
-        <input type="submit" name="exportarDatos" id="exportarDatos" value="Exportar tartas a csv">
+            <h2>EXPORTAR DATOS DE LAS TARTAS</h2>
+            <p>Se exportarán los datos de las tartas a un archivo csv</p>
+            <label for="exportarDatos">Exportar datos</label>
+            <input type="submit" name="exportarDatos" id="exportarDatos" value="Exportar tartas a csv">
 
-        <h2>CARGAR DATOS DE LAS TARTAS</h2>
-        <p>Se cargarán los datos desde un archivo en local</p>
-        <input type="submit" name="cargarDatos" id="cargarDatos" value="Cargar tartas desde un archivo en local">
+            <h2>CARGAR DATOS DE LAS TARTAS</h2>
+            <p>Se cargarán los datos desde un archivo en local</p>
+            <label for="cargarDatos">Cargar datos</label>
+            <input type="submit" name="cargarDatos" id="cargarDatos" value="Cargar tartas desde un archivo en local">
+
+
+
+        </label>
     </form>
-
-
 </body>
 
 </html>
