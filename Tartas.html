@@ -1,19 +1,15 @@
 <!DOCTYPE html>
 <!-- saved from url=(0054)http://localhost/PRACTICA-4/Ejercicio-7/Ejercicio7.php -->
-<html lang="es">
-
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
+<html lang="es"><link type="text/css" rel="stylesheet" id="dark-mode-general-link"><link type="text/css" rel="stylesheet" id="dark-mode-custom-link"><style lang="en" type="text/css" id="dark-mode-custom-style"></style><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
     <title>Tienda de tartas</title>
     <link rel="stylesheet" href="./Tartas_files/Ejercicio7.css">
 </head>
 
 <body>
     <h1>Tienda de tartas</h1>
-    <p>Página que simula una tienda de tartas, mediante diferentes operaciones se podrán crear diferentes tiendas y
-        tartas, y luego estas se podrán vincular entre ellas; entre otras operaciones</p>
-    <form action="http://localhost/PRACTICA-4/Ejercicio-7/Ejercicio7.php#" method="post" name="botones">
+    <p>Página que simula una tienda de tartas, mediante diferentes operaciones se podrán crear diferentes tiendas y tartas, y luego estas se podrán vincular entre ellas; entre otras operaciones</p>
+        <form action="http://localhost/PRACTICA-4/Ejercicio-7/Ejercicio7.php#" method="post" name="botones">
 
         <h2>CREAR BASE DATOS</h2>
         <p>Pulsando este botón crearás la base de datos</p>
@@ -21,8 +17,7 @@
         <input type="submit" name="crearBase" id="crearBase" value="Crear base de datos">
 
         <h2>CREAR TABLAS</h2>
-        <p>Pulsando este botón se crearán las tablas en la base de datos que almacenarán las tiendas y las tartas que
-            ofrecen</p>
+        <p>Pulsando este botón se crearán las tablas en la base de datos que almacenarán las tiendas y las tartas que ofrecen</p>
         <label for="crearTabla">Crear tablas</label>
         <input type="submit" name="crearTabla" id="crearTabla" value="Crear tablas">
 
@@ -70,8 +65,7 @@
         <p>¿Apta para celíacos?</p>
         <label for="celiacoT">Apto para celíacos a insertar</label>
         <input type="text" name="celiacoT" id="celiacoT">
-        <p>Información adicional: Para el campo apto para celíacos será suficiente escribir "si" en caso positivo y "no"
-            en caso contrario</p>
+        <p>Información adicional: Para el campo apto para celíacos será suficiente escribir "si" en caso positivo y "no" en caso contrario</p>
         <label for="insertarDatosTarta">Insertar datos de la tarta</label>
         <input type="submit" name="insertarDatosTarta" id="insertarDatosTarta" value="Crear nueva tarta">
 
@@ -103,8 +97,7 @@
         <input type="submit" name="modificarDatos" id="modificarDatos" value="Modificar receta">
 
         <h2>VENDER TARTA EN UNA TIENDA</h2>
-        <p>Pulsando este botón se podrá hacer que una tienda empiece a vender una tarta ya contenida en la base de datos
-        </p>
+        <p>Pulsando este botón se podrá hacer que una tienda empiece a vender una tarta ya contenida en la base de datos</p>
         <p>Código de la tienda que ofertará la tarta:</p>
         <label for="codigoDVender">Código de la tienda donde se venderá</label>
         <input type="text" name="codigoDVender" id="codigoDVender">
@@ -119,8 +112,7 @@
         <input type="submit" name="asignarDatos" id="asignarDatos" value="Comenzar a vender">
 
         <h2>QUITAR TARTA DE UNA TIENDA</h2>
-        <p>Pulsando este botón se podrá hacer que una tienda deje de vender una tarta, ya sea por falta de ingredientes
-        </p>
+        <p>Pulsando este botón se podrá hacer que una tienda deje de vender una tarta, ya sea por falta de ingredientes</p>
         <p>Código de la tienda en la que se dejará de ofertar dicha tarta:</p>
         <label for="codigoDQuitar">Código de la tienda donde se quitará la tarta</label>
         <input type="text" name="codigoDQuitar" id="codigoDQuitar">
@@ -136,13 +128,11 @@
         <label for="exportarDatos">Exportar datos</label>
         <input type="submit" name="exportarDatos" id="exportarDatos" value="Exportar tartas a csv">
 
-        <h2>CARGAR DATOS DE LAS TARTAS</h2>
-        <p>Se cargarán los datos desde un archivo en local</p>
+        <h2>CARGAR DATOS DESDE CSV</h2>
+        <p>Se cargarán los datos desde las tartas y las tiendas desde los csv específicados</p>
         <label for="cargarDatos">Cargar datos</label>
-        <input type="submit" name="cargarDatos" id="cargarDatos" value="Cargar tartas desde un archivo en local">
+        <input type="submit" name="cargarDatos" id="cargarDatos" value="Cargar tartas y tiendas">
     </form>
+    
 
-
-</body>
-
-</html>
+</body></html>
